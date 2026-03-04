@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Api", "FinanceTracker.Api\FinanceTracker.Api.csproj", "{8753BF11-9ED6-4330-A239-9230C5B9D870}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26760C0E-091B-43FA-A8D7-6F97AD7139D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Api", "src\FinanceTracker.Api\FinanceTracker.Api.csproj", "{DBE6274F-421D-42D6-8CC5-5F913D8313D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Domain", "src\FinanceTracker.Domain\FinanceTracker.Domain.csproj", "{A8ACCC43-D760-4AAE-B9D8-6025A36283A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Application", "src\FinanceTracker.Application\FinanceTracker.Application.csproj", "{C51950F4-4C4C-439D-885C-0681CECE71C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Infrastructure", "src\FinanceTracker.Infrastructure\FinanceTracker.Infrastructure.csproj", "{E0A72503-B5C1-465B-90BA-B4E03545AEFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{85A6DBCD-5102-41A9-A21C-574B2ADCF34C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Tests", "tests\FinanceTracker.Tests\FinanceTracker.Tests.csproj", "{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +26,32 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8753BF11-9ED6-4330-A239-9230C5B9D870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8753BF11-9ED6-4330-A239-9230C5B9D870}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8753BF11-9ED6-4330-A239-9230C5B9D870}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8753BF11-9ED6-4330-A239-9230C5B9D870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE6274F-421D-42D6-8CC5-5F913D8313D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE6274F-421D-42D6-8CC5-5F913D8313D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE6274F-421D-42D6-8CC5-5F913D8313D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE6274F-421D-42D6-8CC5-5F913D8313D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8ACCC43-D760-4AAE-B9D8-6025A36283A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8ACCC43-D760-4AAE-B9D8-6025A36283A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8ACCC43-D760-4AAE-B9D8-6025A36283A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8ACCC43-D760-4AAE-B9D8-6025A36283A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51950F4-4C4C-439D-885C-0681CECE71C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51950F4-4C4C-439D-885C-0681CECE71C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51950F4-4C4C-439D-885C-0681CECE71C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51950F4-4C4C-439D-885C-0681CECE71C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A72503-B5C1-465B-90BA-B4E03545AEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A72503-B5C1-465B-90BA-B4E03545AEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A72503-B5C1-465B-90BA-B4E03545AEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A72503-B5C1-465B-90BA-B4E03545AEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBE6274F-421D-42D6-8CC5-5F913D8313D8} = {26760C0E-091B-43FA-A8D7-6F97AD7139D3}
+		{A8ACCC43-D760-4AAE-B9D8-6025A36283A3} = {26760C0E-091B-43FA-A8D7-6F97AD7139D3}
+		{C51950F4-4C4C-439D-885C-0681CECE71C3} = {26760C0E-091B-43FA-A8D7-6F97AD7139D3}
+		{E0A72503-B5C1-465B-90BA-B4E03545AEFA} = {26760C0E-091B-43FA-A8D7-6F97AD7139D3}
+		{F48C68B6-C1C3-4E65-87B2-6F0A12EC6C85} = {85A6DBCD-5102-41A9-A21C-574B2ADCF34C}
 	EndGlobalSection
 EndGlobal
